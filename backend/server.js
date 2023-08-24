@@ -18,6 +18,15 @@ const PORT = process.env.PORT || 8081;
 app.use(cors());
 app.use(express.json()); //req.body
 
+
+app.get("/", (req, res) => {
+  return res.send("Received a GET HTTP method");
+});
+
+app.get('/health', (req, res) =>
+    res.json({ "ServerHealth": "Server is up and running!" })
+  );
+
 // get all orders
 app.get('/orders', async (req, res) => {
     try {
@@ -42,5 +51,5 @@ app.get('/orders/:name', async (req, res) => {
   });
 
 app.listen(PORT, () => {
-    console.log(`Server Running On ${process.env.DEV_MODE} Mode Port On ${PORT}`);
+    console.log(`Server Running On ${process.env.DEV_MODE} Mode On Port ${PORT}`);
   });
