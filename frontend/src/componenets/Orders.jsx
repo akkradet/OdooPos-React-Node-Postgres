@@ -1,6 +1,5 @@
 import { DataGrid } from '@mui/x-data-grid';
 import React, { useState, useEffect } from 'react';
-
 const columns = [
     { field: "id", headerName: "ID", flex: 1 },
     { field: "pos_name", headerName: "เลขที่บิล", flex: 1 },
