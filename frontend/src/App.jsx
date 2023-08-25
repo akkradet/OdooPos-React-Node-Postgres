@@ -1,16 +1,12 @@
-import './App.css';
+import React from 'react'
+import Navbar from './componenets/Navbar'
+import Orders from './componenets/Orders'
 
-// components
-import ListOrders from './components/ListOrders';
-
-function App() {
+export default function App() {
   return (
-    <>
-      <div className="container">
-        <ListOrders />
-      </div>
-    </>
-  );
+    <div>
+      <Navbar/>
+      <Orders/>
+    </div>
+  )
 }
-
-export default App;
