@@ -8,6 +8,7 @@ const columns = [
     { field: "partner_name", headerName: "ชื่อลูกค้า", flex: 1 },
     { field: "payment_method_name", headerName: "วิธีจ่ายเงิน", flex: 1 },
     { field: "create_date", headerName: "วันที่", flex: 1 },
+    {headerName: "Action", flex: 1 },
   ];
 
 export default function Orders() {
